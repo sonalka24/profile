@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+  <title>Profile Sonal Katiyar</title>
+  <style>
+    body, html {
+      scroll-behavior: smooth;
+      height: 100%;
+      margin: 0;
+      font-size: 16px
+    }
+
+    h2{
+        font-size: 3em;
+    }
+   
+    
+    header {
+      text-align: center;
+      padding: 5rem 1rem;
+      color: white
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      color: #fff
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      width: 100%;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 1px 0;
+    }
+
+    @media (max-width: 768px) {
+    body, html {
+        font-size: 12px; /* Decrease font size for small screens */
+    }
+    section {
+        height: auto;
+        flex-direction: column; /* Change to column on smaller screens */
+    }
+
+    skills-container {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .skills-column {
+      height: auto;
+      flex-direction: column;
+    }
+    
+
+    .nav-links {
+        flex-direction: column; /* Stack items vertically */
+    }
+    .nav-links li {
+        flex: 1; /* Allow items to take full width */
+    }
+}
+
+#navbar {
+    background-color:black; /* Navbar background color */
+}
+
+.nav-links {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to multiple rows */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+
+
+.nav-links li {
+    flex: 1 1 auto; /* Allow items to grow and shrink */
+}
+
+
+
+.nav-links a {
+    display: block; /* Make links block elements */
+    padding: 15px 20px; /* Add padding for clickable area */
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center align text */
+}
+
+
+    p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column; /* Keep cards stacked vertically */
+        gap: 2rem; /* Space between cards */
+        width: 100%; /* Full viewport width */
+        margin: 0; /* Remove default margin */
+        padding: 1rem; /* Optional: Add padding for internal spacing */
+        box-sizing: border-box; /* Include padding and border in element's total width/height */
+    }
+
+
+    .section-card {
+        background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+        border-radius: 1rem;
+        padding: 1.5rem;
+        transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for the effects */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        width: auto;
+        text-align: center;
+    }
+
+    .section-card:hover {
+        transform: scale(1.05); /* Grow effect on hover */
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly increase opacity on hover */
+        border: 2px solid #fff; /* White border on hover */
+        box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* Shadow effect on hover */
+    }
+
+    .skills-container {
+      display: flex; /* Use flexbox for columns */
+      flex-direction: row;
+    }
+
+    .skills-column {
+      margin: 0 2rem; /* Margin between columns */
+      flex-direction: column;
+    }
+
+    .button {
+        color: #fff; /* Button text color */
+        padding: 0.5rem 1rem; /* Button padding */
+        border-radius: 0.25rem; /* Rounded corners */
+        display: inline-block; /* Display as block */
+    }
+
+    .button:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly increase opacity on hover */
+        border: 2px solid #fff; /* White border on hover */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Adjust font size for prominence */
+        font-weight: bold; /* Make the text bold */
+        color: #fff; /* Set text color to white */
+        margin-bottom: 0.5rem; /* Space below the title */
+        display: block; /* Ensure it occupies the full width */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for better readability */
+    }
+
+
+    .card-body {
+        font-size: 1rem; /* Base font size for readability */
+        color: #e0e0e0; /* Light gray color for the text */
+        margin-top: 0.1rem; /* Space above the details */
+        line-height: 1.5; /* Increase line height for better spacing */
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for contrast */
+        border-radius: 0.5rem; /* Rounded corners */
+        padding: 1rem; /* Padding inside the div */
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    }
+
+
+    .card-footer {
+        display: flex; /* Flexbox for alignment */
+        justify-content: space-between; /* Space between the links */
+        margin-top: 1rem; /* Space above the footer */
+    }
+
+    .card-footer a {
+        text-decoration: none; /* Remove underline */
+        color: #fff; /* White color for links */
+        font-size: 1rem; /* Base font size for links */
+        padding: 0.5rem 1rem; /* Padding for clickable area */
+        border-radius: 0.5rem; /* Rounded corners */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover */
+    }
+
+/* Styles for summary link */
+.summary-link {
+    background-color: transparent; /* No background for summary link */
+    border: 2px solid #fff; /* White border for summary link */
+}
+
+/* Styles for GitHub button */
+.github-link {
+    background-color: #333; /* Dark background for GitHub link */
+    color: #fff; /* White text */
+}
+
+/* Hover effects */
+.card-footer a:hover {
+    color: #010102; /* Darker color on hover */
+}
+
+.summary-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover for summary link */
+}
+
+.github-link:hover {
+    background-color: #444; /* Darker background on hover for GitHub button */
+}
+
+    #summary {
+        display: flex;
+        color: white;
+    }
+
+   
+    #summary {
+        background-color: rgba(20, 33, 31, 0.8); /* Muted teal with 80% opacity */
+    }
+
+
+    #education {
+        background-color: rgba(31, 40, 48, 1); /* Darker muted blue-gray with 80% opacity */
+    }
+
+    #experience {
+        background-color: rgba(47, 74, 66, 1); /* Darker muted green with 80% opacity */
+    }
+
+    #skills {
+        background-color: rgb(44, 29, 16); /* Darker muted orange with 80% opacity */
+    }
+
+    #certificates {
+        background-color: rgba(26, 34, 38, 1); /* Darker muted gray with 80% opacity */
+    }
+
+    #projects {
+        background-color: rgba(38, 24, 54, 1); /* Darker muted lavender with 80% opacity */
+    }
+
+    #header {
+        background-color: rgba(31, 40, 48, 1); /* Same as education for consistency */
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+
+<nav id="navbar">
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        
+    </ul>
+</nav>
+
+<!-- Header Section -->
+<header id="header">
+    <h2>Sonal Katiyar</h2>
+    <p>
+        <i class="fas fa-map-marker-alt icon"></i> Storgata 59, Oslo, Norway | 
+        <i class="fas fa-phone-alt icon"></i> Phone: (+47) 96822062 | 
+        <i class="fas fa-envelope icon"></i> Email:s2412700@bi.no
+    </p>
+</header>
+
+
+  
+
+
+
+
+
+</div>
+  </section>
+  
+
+
+
+  
+
+<!-- Projects Section -->
+
+
+
+    
+<section id="projects" style="height: auto;">
+    <div>
+        <h2>Projects</h2>
+        <div class="section">
+            <div class="section-card">
+                <span class="card-title">Strategic Evaluation of HR Policies in Indian Organizations</span>
+                <div class="card-body" style="text-align: left;">
+                    <ul>
+                        <li> <i class="fas fa-check-circle"></i> Conducted a real-time survey of 60 employees based in Delhi.</li>
+                        <li> <i class="fas fa-check-circle"></i> Analyzed data on employee retention and satisfaction.</li>
+                        <li> <i class="fas fa-check-circle"></i> Evaluated educational initiatives offered by organizations.</li>
+                        <li> <i class="fas fa-check-circle"></i> Assessed current education levels of employees.</li>
+                        <li> <i class="fas fa-check-circle"></i> Recorded the average employee age.</li>
+                        <li> <i class="fas fa-check-circle"></i> Identified reasons for leaving previous organizations.</li>
+                        <li> <i class="fas fa-check-circle"></i> Provided suggestions for organizations to enhance employee retention.</li>
+                    </ul>
+                </div>
+                <!-- <div class="card-footer">
+                    <a href="link_to_google_docs_summary" class="summary-link">View Summary Document</a>
+                    <a href="link_to_github_code" class="github-link button">View on GitHub</a>
+                </div> -->
+            </div>
+            <div class="section-card">
+                <span class="card-title"> Project- Market basket Analysis for SuperBazar</span>
+                <div class="card-body"  style="text-align: left;">
+                    <ul>
+                        <li> <i class="fas fa-check-circle"></i> Conducted market basket analysis to understand customer purchasing behavior.</li>
+                        <li> <i class="fas fa-check-circle"></i> Revealed patterns in customer purchases for strategic insights.</li>
+                        <li> <i class="fas fa-check-circle"></i> Identified product associations to optimize store layout.</li>
+                        <li> <i class="fas fa-check-circle"></i> Enhanced cross-selling opportunities based on analysis findings.</li>
+                        <li> <i class="fas fa-check-circle"></i> Provided insights into popular product combinations for inventory placement.</li>
+                        <li> <i class="fas fa-check-circle"></i> Implemented findings to improve customer experience.</li>
+                        <li> <i class="fas fa-check-circle"></i> Contributed to an increase in overall sales for SuperBazar.</li>
+                    </ul>
+                </div>
+                <!-- <div class="card-footer">
+                    <a href="link_to_google_docs_summary" class="summary-link">View Summary Document</a>
+                    <a href="link_to_github_code" class="github-link button">View on GitHub</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="skills">
+    <div>
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-chart-line"></i> Data Analytics
+                    </div>
+                    <div class="card-body">
+                        Python Programming, Pandas, Numpy
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-briefcase"></i> Business Optimization
+                    </div>
+                    <div class="card-body">
+                        Pyomo, Gurobi
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-sitemap"></i> Data Modelling & Simulation
+                    </div>
+                    <div class="card-body">
+                        Vensim
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-code"></i> Statistical Software
+                    </div>
+                    <div class="card-body">
+                        R Studio
+                    </div>
+                </div>
+            </div>
+            <div class="skills-column">
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-chart-bar"></i> Data Visualization
+                    </div>
+                    <div class="card-body">
+                        Excel,Matplotlib, Seaborn
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-database"></i> Databases
+                    </div>
+                    <div class="card-body">
+                        SQL
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-title">
+                        <i class="fas fa-tools"></i> Other Skills
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><strong>Banking Software:</strong> Finnacle, FMS-MIS (ERP systems)</li>
+                            <li><strong>Miscellaneous:</strong> LaTeX, Microsoft Office Suite</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+<script>
+    // Fetch location data using ipapi.co
+    fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+            // Check if the country is Norway
+            if (data.country_code === 'NO') {
+                
+            } else {
+                // Display a restricted access message
+                document.body.innerHTML = `
+                    <div class="error-container">
+                        <i class="fas fa-exclamation-triangle icon"></i>
+                        <h1>Access Restricted</h1>
+                        <p class="restricted-message">This site is only accessible from Norway.</p>
+                    </div>
+                `;
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching location data:', error);
+            document.getElementById('locationMessage').innerText = 'Unable to determine your location.';
+        });
+</script>
+
+</body>
+</html>
